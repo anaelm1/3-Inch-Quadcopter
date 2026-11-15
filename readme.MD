@@ -2,7 +2,7 @@
 
 The quadcopter is a beginner-friendly drone built with a custom PCB and a custom 3D-printed body. 
 
-The inspiration behind this project was to reignite the interest in drones I had when I was younger, while also serving as a showcase project for my intended majors (mechanical and aeronautical engineering). Beyond this, the project lays the groundwork for a broader vision: building autonomous delivery drones.
+The inspiration behind this project was to reignite the interest in drones I had when I was younger, and it will also be as a showcase project for my intended majors (mechanical and aeronautical engineering). Beyond this, the project is part of a idea of building autonomous delivery drones.
 
 ## Features
 -  Custom PCB featuring an ESP32-C3 development board and a GY-521 IMU (gyroscope/accelerometer).
