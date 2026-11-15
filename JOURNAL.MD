@@ -3,10 +3,11 @@ title: "Quadcopter"
 github: "https://github.com/anaelm1/Basic-Quadcopter"
 description: "This is the first project in my drone journey. I am starting off with a basic Quadcopter with a custom PCB, 3D printed body, and a controller. \n\nAfter doing this project, I will start a more advanced FPV drone followed by a delivery drone. The reason for all this is to reignite my interest in drones which I had when I was younger and also use it as a showcase project for my intended majors (mechanical & aeronauticalengineering). "
 created_at: "2026-09-22"
-total_time: "17h 30m"
+total_time: "19h 30m"
 ---
 
-# October 26, 2026: I researched on the components'  selection
+# October 26, 2026: I researched on the components' selection
+<!-- fabricate:entry 1253 -->
 
 I researched on the required components for the project. After getting a basic idea, I started finalizing each component. There are definitely a lot of boards/chips to choose from so research was needed. 
 I ended up finalizing the esp32 and MPU6500 for the flight controller part eventhough I considered a lot of options.
@@ -17,7 +18,8 @@ Here is the lapse timelapse: https://lapse.hackclub.com/timelapse/zjKeANbEE17I
 
 **Total time spent: 30m**
 
-# November 7, 2026: Finalized schematics components 
+# November 7, 2026: Finalized schematics components
+<!-- fabricate:entry 2344 -->
 
 I have so far read through many component datasheets and researched on the whole schematics. 
 
@@ -46,6 +48,7 @@ Each things' value is saved separetely. Since, I have finalized this, I am going
 **Total time spent: 1h 30m**
 
 # November 8, 2026: Did testing in Wokwi
+<!-- fabricate:entry 2364 -->
 
 I tested out the main flight controller part in Wokwi. It was kind of fun, and I even spotted a few mistakes in the pin layout. Wokwi doesn't has capcitors and noise check so that might be an issue. I am now learning to read datasheet beacuse Ai is not reliable for this. And I think this would be a great thing to learn. Most of my projects so far have straightforward, but I am hoping to use this project to learn engineering concepts in details like capacitors, MOSFAT, datasheets etc.
 
@@ -55,6 +58,7 @@ I tested out the main flight controller part in Wokwi. It was kind of fun, and I
 **Total time spent: 30m**
 
 # November 10, 2026: Worked on Schematics
+<!-- fabricate:entry 2510 -->
 
 I started working on the schematics. I read through the datasheet of the esp32 C3 dev board and the gy 521 to finalize their connections. I feel much better finalizing the connections by myself instead of using AI to tell me which pins connects to which. After this connection, I had the issue of power supply where my power supply was 3.7v and both of these use 5v for input. I searched through multiple boost modules trying to find the smallest one for my use, but haven't found one. I will probably continue finding the module and if I can't then I am gonna go with MT3608 as I have used it beforehand. 
 
@@ -65,6 +69,7 @@ Reading datasheet is extremely time consuming, but I will continue doing it sinc
 **Total time spent: 1h 30m**
 
 # November 11, 2026: Built the motor part in schematics
+<!-- fabricate:entry 2575 -->
 
 I started the session by finalizing the boost module which I was discussing yesterday. The one I decided was the Adafruit MiniBoost 5v module. After this, the next half hour or so was a wild goose chase of finding the footprint of the module. After giving up the search, I made the symbol and footprint myself which was kinda fun. Then, I focused on the motor logic. I made the schematics of one of the motors and the rest is just copy paste. The circuit uses MOSFET and diodes as I discussed before. The next thing to do is probably adding the capacitors and stuff to deal with noise.
 
@@ -74,7 +79,8 @@ I started the session by finalizing the boost module which I was discussing yest
 
 **Total time spent: 1h 30m**
 
-# November 12, 2026: Completed the schematics 
+# November 12, 2026: Completed the schematics
+<!-- fabricate:entry 2638 -->
 
 I started the session by completing the motor routing. After this, I added capacitors to all the places (a lot of them) which needed them, and also made the battery monitor part. Then, I rechecked the board myself and Claude 5 times or more which was really time consuming. So, the schematics is somewhat done. I am still unsure about many things so I am gonna put it on reddit for feedback. 
 
@@ -87,6 +93,7 @@ Check out the schematics!
 **Total time spent: 2h**
 
 # November 13, 2026: Assigned footprint
+<!-- fabricate:entry 2895 -->
 
 I assigned all the footprint! Honestly, I hate assigning footprints cuz it always takes so long. While choosing them, I also finalized component choices like which model do I wanna use etc. Now that this is done, I am starting work on the pcb itself. I also watched a few videos on how to improve my precison in making pcbs, as I struggled with measurements the last time. 
 
@@ -94,7 +101,8 @@ I assigned all the footprint! Honestly, I hate assigning footprints cuz it alway
 
 **Total time spent: 2h**
 
-# November 13, 2026: Placed the components on the pcb
+# November 13, 2026 (entry 2): Placed the components on the pcb
+<!-- fabricate:entry 2913 -->
 
 I worked on the PCB design. I started off by adding all the components and then I added the hole. At first I was starting with a 30 mm x 30 mm design, but I soon realized it would be too small. That is why I moved to a 50 mm x 50 mm design, but that too was too small, and by the end I was on a 60 mm x 60 mm board size.
 
@@ -107,6 +115,7 @@ That is why I researched all the options I had. One of the options was to move t
 **Total time spent: 2h**
 
 # November 14, 2026: Completed the electronic part of the PCB
+<!-- fabricate:entry 2936 -->
 
 In my last devlog, I talked about how there were too many components for the size of the circuit, and how I thought about switching to a simple flat electronic ESC. However, after researching ESCs, the options I had were very limited because they all had very low current ratings. Their current rating were below 2A, while my motors could easily pull more than 2 amps, so it just was not worth doing.
 
@@ -119,7 +128,8 @@ Now, the only things left for me to do are to clean up the silkscreen layer so t
 
 **Total time spent: 2h**
 
-# November 14, 2026: Made the 3D model
+# November 14, 2026 (entry 2): Made the 3D model
+<!-- fabricate:entry 2981 -->
 
 In my last devlog, I decided that I would not use a 3D body, but rather I would use the PCB as its own body, meaning I would make the arms out of the PCB as well. After researching how durable that would be and what the possibilities were, I realized that it would be too unsafe and there would be a really high risk of the PCB breaking at the X joints.
 
@@ -132,6 +142,7 @@ I have designed a rough body, but there are a few minor things left to do. The d
 **Total time spent: 2h**
 
 # November 15, 2026: Completed the 3D model and cleaned up the PCB
+<!-- fabricate:entry 3005 -->
 
 In my last devlog, I started designing of a simple 3D body in Fusion to host the PCB and extend out to hold the motors.
 
@@ -143,5 +154,20 @@ At this point, the main tasks left are writing the firmware and doing the basic 
 
 ![](https://fabricate.hackclub-assets.com/b63a94f6b1fbb19b84e395d887ed29d8c4d7e7d86703541bfb679359e3337890/image-png/body.PNG)
 ![](https://fabricate.hackclub-assets.com/d215665cb600c97e3d431008127b9a78c1cc6e30e3786aa825b1ad38b1a0d1ff/image-png/pcb%203d%202.PNG)
+
+**Total time spent: 2h**
+
+# November 15, 2026 (entry 2): Wrote firmware and documentation
+<!-- fabricate:entry 3058 -->
+
+Since the last time I had completed both the PCB and the 3D body, I started the work on the firmware. I had planned from the start to use the ESP Drone app on my phone to control the drone, but the ESP Drone app was not directly compatible with the ESP32-C3 since it was built for the ESP32-S series chips. Because of that, I first had to write the basic code and all the initialization, and figure out how to connect my ESP32-C3 to the ESP Drone app since their underlying architecture is pretty similar.
+
+I used AI to help me write the code that connected the ESP32-C3 to the app. After that, I wrote a simple PID loop that took the input from the app and processed it. I already knew how a PID loop works because I am also working on a 3D drone simulator in Phantom, so the PID part was straightforward for me. However, for the Wi-Fi connectivity part, I had to rely a lot on help from Claude.
+
+I spent about an hour and a half writing all of that. Afterward, I put together a simple README with pictures and other details, and organized everything into clear folders for the firmware, PCB, production files, and the rest.
+
+Now the project is completely finished, and the only thing left to do is to submit it.
+
+![](https://fabricate.hackclub-assets.com/799d4b0e26b3f0ff2de98ae2f6ca92f6150d8b83fa6b72894d4f55085333f426/image-png/code.PNG)
 
 **Total time spent: 2h**
