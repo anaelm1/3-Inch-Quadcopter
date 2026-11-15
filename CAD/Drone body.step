@@ -10,7 +10,7 @@ FILE_DESCRIPTION(
 
 FILE_NAME(
 /* name */ 'Drone body.step',
-/* time_stamp */ '2026-11-15T16:16:57+05:00',
+/* time_stamp */ '2026-11-15T17:22:11+05:00',
 /* author */ (''),
 /* organization */ (''),
 /* preprocessor_version */ 'ST-DEVELOPER v20.2',
@@ -5985,15 +5985,15 @@ SOLID_ANGLE_UNIT()
 #5799=PRODUCT_DEFINITION_SHAPE('',$,#5802);
 #5800=SHAPE_REPRESENTATION('',(#3414),#5792);
 #5801=PRODUCT_DEFINITION_CONTEXT('part definition',#5806,'design');
-#5802=PRODUCT_DEFINITION('2026-11-14-13-42-55-575','Drone body',#5803,#5801);
+#5802=PRODUCT_DEFINITION('2026-11-14-13-42-55-575','(Unsaved)',#5803,#5801);
 #5803=PRODUCT_DEFINITION_FORMATION('',$,#5808);
-#5804=PRODUCT_RELATED_PRODUCT_CATEGORY('Drone body','Drone body',(#5808));
+#5804=PRODUCT_RELATED_PRODUCT_CATEGORY('(Unsaved)','(Unsaved)',(#5808));
 #5805=APPLICATION_PROTOCOL_DEFINITION('international standard',
 'automotive_design',2009,#5806);
 #5806=APPLICATION_CONTEXT(
 'Core Data for Automotive Mechanical Design Process');
 #5807=PRODUCT_CONTEXT('part definition',#5806,'mechanical');
-#5808=PRODUCT('2026-11-14-13-42-55-575','Drone body',$,(#5807));
+#5808=PRODUCT('2026-11-14-13-42-55-575','(Unsaved)',$,(#5807));
 #5809=PRESENTATION_STYLE_ASSIGNMENT((#5810));
 #5810=SURFACE_STYLE_USAGE(.BOTH.,#5811);
 #5811=SURFACE_SIDE_STYLE('',(#5812));
